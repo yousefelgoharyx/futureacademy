@@ -40,7 +40,8 @@ const useUserData = () => {
                     setLoading(false);
                     setError(true);
                 }
-            } catch {
+            } catch (e) {
+                console.log(e);
                 setLoading(false);
                 setError(true);
             }

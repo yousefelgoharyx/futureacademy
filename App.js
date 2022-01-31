@@ -17,7 +17,6 @@ const Stack = createStackNavigator();
 export default function App() {
     const loaded = useAppFont();
     const { isAuthed } = useAuth();
-    useMemo(() => I18nManager.forceRTL(true), []);
     if (!loaded) return null;
     return (
         <View style={{ flex: 1 }}>
