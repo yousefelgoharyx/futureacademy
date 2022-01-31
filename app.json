@@ -1,32 +1,32 @@
 {
-  "expo": {
-    "name": "futureacademy",
-    "slug": "futureacademy",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "expo": {
+        "name": "Future Academy",
+        "slug": "FutureAcademyApp",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/logo1.png",
+        "splash": {
+            "image": "./assets/splash3.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.itgo.futureacademy"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/logo1.png",
+                "backgroundColor": "#FFFFFF"
+            },
+            "package": "com.itgo.futureacademy"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        }
     }
-  }
 }
