@@ -26,6 +26,8 @@ const Input = ({ placeholder, icon, isSecure, onChange, value, ...rest }) => {
                 onBlur={() => setfocused(false)}
                 onChangeText={onChange}
                 value={value}
+                keyboardType="email-address"
+                autoCapitalize="none"
                 {...rest}
             />
         </View>
