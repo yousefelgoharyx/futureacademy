@@ -45,12 +45,14 @@ const Login = () => {
                     placeholder="البريد الالكتروني"
                     onChange={(e) => setEmail(e)}
                     value={email}
+                    keyboardType="email-address"
+                    autoCapitalize="none"
                 />
                 <Spacer size={8} />
                 <Input
                     icon="lock-closed"
                     placeholder="كلمة المرور"
-                    isSecure
+                    isSecure={true}
                     onChange={(e) => setPassword(e)}
                     value={password}
                 />

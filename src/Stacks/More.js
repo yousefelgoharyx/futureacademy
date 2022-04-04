@@ -48,15 +48,24 @@ const More = ({ navigation }) => {
                     icon="logo-youtube"
                     title="يوتيوب"
                     subtitle="@futureacademy"
-                    onPress={() => {
-                        Linking.openURL(
-                            "vnd.youtube://channel/UCFwwvgE2Mixz9yoXUxAoq2Q"
-                        ).catch(() => {
-                            Linking.openURL(
-                                "https://www.youtube.com/channel/UCFwwvgE2Mixz9yoXUxAoq2Q"
-                            );
-                        });
-                    }}
+                    onPress={() =>
+                        Linking.openURL("fb://page/594363864008881").catch(
+                            () => {
+                                Linking.openURL(
+                                    "https://www.facebook.com/futureacademy2015"
+                                );
+                            }
+                        )
+                    }
+                    // onPress={() => {
+                    //     Linking.openURL(
+                    //         "vnd.youtube://channel/UCFwwvgE2Mixz9yoXUxAoq2Q"
+                    //     ).catch(() => {
+                    //         Linking.openURL(
+                    //             "https://www.youtube.com/channel/UCFwwvgE2Mixz9yoXUxAoq2Q"
+                    //         );
+                    //     });
+                    // }}
                 />
                 {/* <SocialMedia
                     icon="logo-instagram"

@@ -2,7 +2,15 @@ import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from "react";
 import { StyleSheet, TextInput, View } from "react-native";
 import Spacer from "../components/Spacer";
-const Input = ({ placeholder, icon, isSecure, onChange, value, ...rest }) => {
+const Input = ({
+    placeholder,
+    icon,
+    isSecure,
+    onChange,
+    value,
+
+    ...rest
+}) => {
     const [focused, setfocused] = useState(false);
     return (
         <View style={styles.inputWrapper}>
@@ -26,8 +34,6 @@ const Input = ({ placeholder, icon, isSecure, onChange, value, ...rest }) => {
                 onBlur={() => setfocused(false)}
                 onChangeText={onChange}
                 value={value}
-                keyboardType="email-address"
-                autoCapitalize="none"
                 {...rest}
             />
         </View>
